@@ -1,6 +1,8 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.restassured.RestAssured;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.Response;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -29,14 +31,15 @@ public class BaseTest {
     public void tearDown() {
         driver.quit();
     }
-
+/*
     @AfterMethod
     public void teardown(ITestResult result) {
         if(Constants.REMOTE_RUN) {
             String status = result.isSuccess() ? "passed" : "failed";
-
-            driver.executeScript("job-result=" + status);
+            driver.executeScript("sauce:job-result=" + status);
         }
-    }
+    }*/
+
+
 
 }

@@ -5,5 +5,6 @@ public class Constants {
 
     public static String REMOTE_URL = "https://ondemand.eu-central-1.saucelabs.com:443/wd/hub";
 
+    public static String ApiUrl = "https://reqres.in/api/users/2";
 
 }
